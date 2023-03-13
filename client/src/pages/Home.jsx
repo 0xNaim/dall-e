@@ -24,7 +24,7 @@ const Home = () => {
       setLoading(true);
 
       try {
-        const response = await fetch(`${process.env.API_URL}/post`, {
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/post`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
